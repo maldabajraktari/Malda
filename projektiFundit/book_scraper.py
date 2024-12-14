@@ -9,6 +9,14 @@ book_dictionary={}
 authors=[]
 
 #definimi i funksionit per web scrape
+class BeautifulSoup:
+    pass
+
+
+class BeautifulSoup:
+    pass
+
+
 def scrape_books():
     #deklarimi i url prej nga po e marrim webpage
     url="https://www.goodreads.com/shelf/show/popular"
@@ -41,7 +49,7 @@ def scrape_books():
                 parts=[part.strip() for part in info_text.split("-")]
                 for part in parts:
                     if 'avg rating' in part:
-                        avg_rating=part.split("avg rating)"[-1].strip()
+                        avg_rating=part.split("avg rating")[-1].strip()
                         print(avg_rating)
                     elif "published" in part:
                         published=part.split("published")[-1].strip()
